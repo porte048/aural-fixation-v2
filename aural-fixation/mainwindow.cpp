@@ -23,8 +23,7 @@ MainWindow::MainWindow(QWidget *parent) :
     player->setVolume(100);
     connect(player, &QMediaPlayer::positionChanged, this, &MainWindow::on_positionChanged);
     connect(player, &QMediaPlayer::durationChanged, this, &MainWindow::on_durationChanged);
-    ui->listWidget->item(0)->setText("Symphony track");
-    ui->currentSong->setText("Symphony Track");
+
 }
 
 MainWindow::~MainWindow()
